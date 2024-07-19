@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column; /* add this to make the header and content stack vertically */
+    background-color: antiquewhite;
+}
+.header{
+    margin: auto;
+    justify-content: center;
+    font-size: 30px;
+}
+.content{
+    display: flex;
+    flex: 1; /* add this to make the content take up the remaining space */
+    flex-direction: column; /* add this to make the container and boxes stack vertically */
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    border: 0cap;
+    outline: 1px solid gray;
+}
+.container{
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap; /* add this to make the boxes wrap to the next line */
+    border: 3px black solid;
+    border-radius: 4px; 
+}
+.option{
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+}
+.option button{
+    font-size: 20px;
+    width: 100px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
